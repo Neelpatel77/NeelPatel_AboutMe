@@ -2,8 +2,6 @@
 This repository is for WebDesign Project course work
 
 
-Sure, here's an example README file that you can use for your HTML and CSS project:
-
 # Project Name
 
 ## Introduction
