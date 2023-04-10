@@ -293,8 +293,8 @@ p {
   background-image: url(/asserts/cursoral1.jpeg);
 
   /* Set background size */
-  background-size: cover; /* Resize the background image to cover the element */
-  background-position: center center; /* Center the background image */
+  background-size: cover; 
+  background-position: center center; 
 
   /* Set minimum width and height */
   min-width: 100%;
