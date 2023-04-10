@@ -1,0 +1,372 @@
+
+/* Base styles for mobile devices */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+#hero {
+  background-image: url(hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero h1 {
+  color: maroon;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0.5rem 1rem rgba(13, 210, 13, 0.5);
+}
+
+#hero h2 {
+  
+  color: maroon;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0.5rem 1rem rgba(13, 210, 13, 0.5);
+}
+
+#portfolio ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+#portfolio li {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+#portfolio img {
+  max-width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button[type=submit] {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button[type=submit]:hover {
+  background-color: #666;
+}
+
+#contact {
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-info strong {
+  font-weight: bold;
+}
+
+.coursoral-image {
+  /* Set background image */
+  background-image: url(/asserts/cursoral1.jpeg);
+  
+  /* Set background size */
+  background-size: cover; /* Cover the entire element */
+  background-size: contain; /* Fit the entire image into the element */
+  background-size: 1000px 600px; /* Set a fixed size */
+  
+  /* Set minimum width and height */
+  min-width: 1000px;
+  min-height: 600px;
+}
+
+/* THis is for about me */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-me img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-me img:hover {
+  transform: scale(1.2);
+}
+
+.container {
+	max-width: 900px;
+	margin: 50px auto;
+	padding: 0 20px;
+	
+}
+
+p {
+	margin: 20px 0;
+	line-height: 1.5;
+  text-align: justify;
+  
+}
+
+
+/* FOR PORTFOLIO */
+#portfolio {
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
+#portfolio h2 {
+  text-align: center;
+}
+
+#portfolio ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#portfolio li {
+  margin-bottom: 2rem;
+  flex-basis: 30%;
+  position: relative;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-item h3 {
+
+  align-self: center;
+  min-width: fit-content;
+  min-height: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* Styles for tablets and larger screens */
+  header {
+    padding: 1rem 4rem;
+  }
+
+  #portfolio ul {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+.coursoral-image {
+  /* Set background image */
+  background-image: url(/asserts/cursoral1.jpeg);
+
+  /* Set background size */
+  background-size: cover; /* Resize the background image to cover the element */
+  background-position: center center; /* Center the background image */
+
+  /* Set minimum width and height */
+  min-width: 100%;
+  min-height: 550px;
+}
+
+#portfolio {
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
+#portfolio h2 {
+  text-align: center;
+}
+
+#portfolio ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#portfolio li {
+  margin-bottom: 2rem;
+  flex-basis: 30%;
+  position: relative;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-item h3 {
+
+  align-self: center;
+  min-width: fit-content;
+  min-height: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
