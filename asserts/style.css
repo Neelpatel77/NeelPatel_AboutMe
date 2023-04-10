@@ -289,16 +289,17 @@ p {
   }
 }
 .coursoral-image {
-  /* Set background image */
+
+  /* NOTE:::: Setting this attribute as a  background image this is not image it's background image*/
   background-image: url(/asserts/cursoral1.jpeg);
 
-  /* Set background size */
-  background-size: cover; 
-  background-position: center center; 
 
-  /* Set minimum width and height */
+  background-size: cover; 
+  background-position: center center;
+
+
   min-width: 100%;
-  min-height: 550px;
+  min-height: 500px;
 }
 
 #portfolio {
